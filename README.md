@@ -68,7 +68,7 @@ Lancez l'application Streamlit avec la commande suivante :
 
 bash
 Copier
-streamlit run lab2.py
+streamlit run app.py
 Utilisation
 
 Sélectionnez entre 2 et 5 stocks parmi ceux proposés.
