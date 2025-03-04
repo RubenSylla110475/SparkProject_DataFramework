@@ -77,3 +77,7 @@ These visualizations and results offer a detailed understanding of market trends
 - Click on Load Data to import and analyze the data, then explore the interactive results displayed.
 
 ![alt text](https://github.com/RubenSylla110475/SparkProject_DataFramework/blob/main/img/StreamLit_MainPage.jpg)
+![alt text](https://github.com/RubenSylla110475/SparkProject_DataFramework/blob/main/img/Streamlit2.png)
+![alt text](https://github.com/RubenSylla110475/SparkProject_DataFramework/blob/main/img/Streamlit3.png)
+![alt text](https://github.com/RubenSylla110475/SparkProject_DataFramework/blob/main/img/Streamlit4.png)
+
