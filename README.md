@@ -1,80 +1,79 @@
 # Spark Data Framework / Streamlit Project  
 **Ruben SYLLA ING 4 DATA IA Grp 03**
 
-Ce projet est une application d'analyse avancée de données boursières, développée à l'aide de Spark et Streamlit.  
-L'application permet d'importer et d'analyser des données historiques de divers titres (stocks) du Nasdaq, offrant ainsi des insights précieux pour la prise de décision en investissement.
+This project is an advanced stock data analysis application developed using Spark and Streamlit.  
+The application allows for the import and analysis of historical data from various Nasdaq stocks, providing valuable insights for investment decision-making.
 
 ---
 
-## Présentation du Projet
+## Project Overview
 
-L'objectif principal de cette application est de fournir une plateforme interactive qui permet :
-- **L'importation des données** : Récupération des informations boursières via Yahoo Finance.
-- **L'analyse statistique et financière** : Calcul d'indicateurs tels que les moyennes mobiles, les taux de rendement, la volatilité, le momentum, le ratio de Sharpe, le RSI, etc.
-- **La visualisation interactive** : Affichage des graphiques et des tableaux de bord pour explorer les tendances et corrélations entre les actions.
+The main objective of this application is to provide an interactive platform that enables:
+- **Data Import:** Retrieving stock market data via Yahoo Finance.
+- **Statistical & Financial Analysis:** Calculating indicators such as moving averages, return rates, volatility, momentum, Sharpe ratio, RSI, etc.
+- **Interactive Visualization:** Displaying charts and dashboards to explore trends and correlations between stocks.
 
-Grâce à PySpark, l'application traite efficacement de grandes quantités de données, tandis que Streamlit offre une interface utilisateur intuitive et réactive.
-
----
-
-## Comment c'est Fait ?
-
-- **Langage** : Python
-
-- **Technologies & Bibliothèques** :
-  - **Streamlit** : Création d'une interface interactive pour l'analyse et la visualisation.
-  - **PySpark** : Traitement distribué des données pour une meilleure performance.
-  - **Pandas** : Manipulation et transformation des datasets.
-  - **Matplotlib & Seaborn** : Visualisation graphique des indicateurs et tendances.
-  - **yfinance** : Extraction des données boursières directement depuis Yahoo Finance.
-
-- **Structure du Code** :
-  Le script principal (lab2.py) réalise les étapes suivantes :
-  - **Initialisation** : Démarrage d'une session Spark et configuration de l'environnement.
-  - **Importation des données** : Téléchargement des données de plusieurs titres et conversion en DataFrame Spark.
-  - **Analyses & Calculs** : Exécution de diverses fonctions pour :
-    - Calculer des moyennes mobiles.
-    - Analyser la distribution des prix.
-    - Mesurer la corrélation entre les stocks.
-    - Évaluer des indicateurs financiers (taux de rendement, volatilité, momentum, etc.).
-  - **Visualisation** : Affichage interactif des résultats via Streamlit, avec des graphiques et des tableaux dynamiques.
-  - **Paramétrage** : Utilisation d'un panneau latéral pour permettre à l'utilisateur de sélectionner les stocks, définir les dates d'analyse et ajuster d'autres paramètres.
+Leveraging PySpark, the application efficiently processes large volumes of data, while Streamlit offers an intuitive and responsive user interface.
 
 ---
 
-## Résultats
+## How It's Built
 
-Lors de l'exécution, l'application :
-- **Présente un aperçu des données** : Affichage des premiers enregistrements et du schéma des données pour chaque titre sélectionné.
-- **Visualise les analyses** :
-  - Graphiques des distributions de prix et des moyennes mobiles.
-  - Tableaux des statistiques descriptives et indicateurs financiers.
-  - Visualisations interactives de la corrélation entre différentes actions.
-- **Offre une analyse approfondie** : Permet d'explorer des mesures telles que le taux de rendement par période, la volatilité, la performance sectorielle, le momentum, et d'autres métriques clés qui aident à identifier les opportunités d'investissement.
+- **Language:** Python
 
-Ces visualisations et résultats fournissent une compréhension détaillée des tendances du marché et aident à prendre des décisions éclairées basées sur des analyses quantitatives.
+- **Technologies & Libraries:**
+  - **Streamlit:** For creating an interactive interface for analysis and visualization.
+  - **PySpark:** For distributed data processing to enhance performance.
+  - **Pandas:** For data manipulation and transformation.
+  - **Matplotlib & Seaborn:** For graphical visualization of indicators and trends.
+  - **yfinance:** For extracting stock market data directly from Yahoo Finance.
+
+- **Code Structure:**
+  The main script (lab2.py) performs the following steps:
+  - **Initialization:** Starts a Spark session and configures the environment.
+  - **Data Import:** Downloads data for several stocks and converts it into a Spark DataFrame.
+  - **Analysis & Computations:** Executes various functions to:
+    - Calculate moving averages.
+    - Analyze price distributions.
+    - Measure correlations between stocks.
+    - Evaluate financial indicators (return rates, volatility, momentum, etc.).
+  - **Visualization:** Displays interactive results via Streamlit with dynamic charts and tables.
+  - **Parameter Setting:** Uses a sidebar to allow users to select stocks, set analysis dates, and adjust other parameters.
 
 ---
 
-## Comment Lancer l'Application ?
+## Results
 
-1. **Installation des Dépendances**  
-   Installez les bibliothèques requises via pip :
+When executed, the application:
+- **Provides a Data Overview:** Displays the initial records and data schema for each selected stock.
+- **Visualizes the Analysis:**
+  - Charts showing price distributions and moving averages.
+  - Tables presenting descriptive statistics and financial indicators.
+  - Interactive visualizations of correlations between different stocks.
+- **Delivers In-Depth Analysis:** Enables exploration of metrics such as return rates by period, volatility, sector performance, momentum, and other key indicators that help identify investment opportunities.
+
+These visualizations and results offer a detailed understanding of market trends and assist in making informed decisions based on quantitative analysis.
+
+---
+
+## How to Launch the Application
+
+1. **Install Dependencies**  
+   Install the required libraries using pip:
 
    ```bash
    pip install streamlit pandas yfinance matplotlib pyspark seaborn
-Exécution de l'Application
-Lancez l'application Streamlit avec la commande suivante :
+2. **Run the Application**
+   Launch the Streamlit application with the following command:
 
-bash
-Copier
-streamlit run app.py
-Utilisation
+   ```bash
+   streamlit run app.py
 
-Sélectionnez entre 2 et 5 stocks parmi ceux proposés.
-Choisissez les dates de début et de fin pour l'analyse.
-Configurez les paramètres d'analyse (période, mois, etc.) via le panneau latéral.
-Cliquez sur Load Data pour importer et analyser les données, puis explorez les résultats interactifs affichés.
-Ce projet démontre comment combiner la puissance de Spark pour le traitement des données et l'interactivité de Streamlit pour créer des applications d'analyse boursière robustes et intuitives.
+3. **Usage**
+
+- Select between 2 and 5 stocks from the provided list.
+- Choose the start and end dates for the analysis.
+- Configure analysis parameters (period, month, etc.) via the sidebar.
+- Click on Load Data to import and analyze the data, then explore the interactive results displayed.
 
 ![alt text](https://github.com/RubenSylla110475/SparkProject_DataFramework/blob/main/img/StreamLit_MainPage.jpg)
