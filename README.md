@@ -80,4 +80,6 @@ These visualizations and results offer a detailed understanding of market trends
 ![alt text](https://github.com/RubenSylla110475/SparkProject_DataFramework/blob/main/img/Streamlit2.png)
 ![alt text](https://github.com/RubenSylla110475/SparkProject_DataFramework/blob/main/img/Streamlit3.png)
 ![alt text](https://github.com/RubenSylla110475/SparkProject_DataFramework/blob/main/img/Streamlit4.png)
+![alt text](https://github.com/RubenSylla110475/SparkProject_DataFramework/blob/main/img/Streamlit5.png)
+![alt text](https://github.com/RubenSylla110475/SparkProject_DataFramework/blob/main/img/Streamlit6.png)
 
