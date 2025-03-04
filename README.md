@@ -76,3 +76,5 @@ Choisissez les dates de début et de fin pour l'analyse.
 Configurez les paramètres d'analyse (période, mois, etc.) via le panneau latéral.
 Cliquez sur Load Data pour importer et analyser les données, puis explorez les résultats interactifs affichés.
 Ce projet démontre comment combiner la puissance de Spark pour le traitement des données et l'interactivité de Streamlit pour créer des applications d'analyse boursière robustes et intuitives.
+
+![alt text](https://github.com/RubenSylla110475/SparkProject_DataFramework/blob/main/img/StreamLit_MainPage.jpg)
